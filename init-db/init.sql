@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS practica7;
+USE practica7;
+
+CREATE TABLE IF NOT EXISTS saludos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    mensaje VARCHAR(255) NOT NULL,
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO saludos (mensaje) VALUES ('Hola Mundo desde MySQL');
